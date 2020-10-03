@@ -38,3 +38,14 @@ elevator(4)
 elevator(9)
 elevator(24)
 elevator(-20)
+
+def stairs(stairs_floor):
+    for i in int(stairs_floor):
+        if i>0:
+            print("heavi"+(i*"er")+" breathing")
+        if i==0:
+            print("your destination is on this floor, why are you taking the stairs?")
+
+stairs(6)
+stairs(0)
+stairs(77)
