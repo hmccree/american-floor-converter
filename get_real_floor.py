@@ -25,3 +25,16 @@ def real_basement(basement):
     if basement==-13:
         basement_new = "there is no basement -13"
     print(basement_new)
+
+def elevator(elevator_floor):
+    for i in int(elevator_floor - 1):
+        if i==13:
+            continue
+        else:
+            print("now passing floor "+str(i))
+            continue
+
+elevator(4)
+elevator(9)
+elevator(24)
+elevator(-20)
