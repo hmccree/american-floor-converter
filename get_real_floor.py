@@ -1,3 +1,5 @@
+import random
+
 def real_floor(floor):
     floor_new=0
     if 1<floor<13:
@@ -49,3 +51,12 @@ def stairs(stairs_floor):
 stairs(6)
 stairs(0)
 stairs(77)
+
+def vent(rooms_to_travel):
+    if rooms_to_travel<=2:
+        print("you've traveled successfully")
+        i=random.randrange(1)
+        if i<0.5:
+            print("you've been found!")
+        else:
+            print("you've made it!")
